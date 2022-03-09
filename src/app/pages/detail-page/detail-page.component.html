@@ -1,0 +1,79 @@
+<div class="detailContainer">
+<div class="item-a">
+  <p-card class="card-a"> <h2 style="text-align: center;"> News</h2>
+    <mdb-carousel [controls]="true" [indicators]="true" class="customCarousel">
+    <mdb-carousel-item>
+      <p-card  >
+        <ng-template pTemplate="header">
+          <h3 style="text-align: center;"> <a href="
+        https://www.goal.com/en-us/news/maguire-man-utd-disastrous-defence-derby-defeat/blt32342a210f7c3fe1">
+            What has happened to Maguire? Man Utd's disastrous defence laid bare in derby defeat </a></h3>
+        </ng-template>
+
+        <img
+          src="https://eu-images.contentstack.com/v3/assets/bltcc7a7ffd2fbf71f5/blt033d14acc425aa51/6225055c84ddaa7cfc442ab5/Harry_Maguire_Man_Utd_2021-22.jpg?auto=webp&format=pjpg&quality=80&width=1024"
+          class="d-block"
+          alt="..."
+          style="max-width:100%;
+            max-height:100%;"
+        />
+      </p-card>
+
+    </mdb-carousel-item>
+    <mdb-carousel-item>
+      <p-card  >
+        <ng-template pTemplate="header">
+          <h3 style="text-align: center;"> <a href="
+        https://www.goal.com/en-us/news/chelsea-boss-tuchel-explains-starting-havertz-over-lukaku-as/blt1b749e0e092b97a8">
+            Chelsea boss Tuchel explains starting Havertz over Lukaku as Blues rely on distinct qualities </a></h3>
+        </ng-template>
+
+        <img
+          src="https://eu-images.contentstack.com/v3/assets/bltcc7a7ffd2fbf71f5/blt65e5de37733eeddc/62254430fa4de477bce83d76/Kai_Havertz_Chelsea_Burnley_2021-22.jpg?auto=webp&format=pjpg&quality=80&width=1024"
+          class="d-block"
+          alt="..."
+          style="max-width:100%;
+            max-height:100%;"
+        />
+      </p-card>
+    </mdb-carousel-item>
+    <mdb-carousel-item>
+      <p-card  >
+        <ng-template pTemplate="header">
+          <h3 style="text-align: center;"> <a href="
+        https://www.goal.com/en-us/news/how-could-i-forget-him-fabregas-stunned-by-martinelli-goal-after-/blt534a477d85656b8c">
+            'How could I forget him?' - Fabregas stunned by Martinelli goal after singling out Saka and Odegaard as Arsenal's present and future </a></h3>
+        </ng-template>
+
+        <img
+          src="https://eu-images.contentstack.com/v3/assets/bltcc7a7ffd2fbf71f5/blte2d0ca0457e237b8/6224d0abfe6d1502cc4c6bbd/Arsenal_vs_watford.jpg?auto=webp&format=pjpg&quality=80&width=1024"
+          class="d-block"
+          alt="..."
+          style="max-width:100%;
+            max-height:100%;"
+        />
+      </p-card>
+    </mdb-carousel-item>
+  </mdb-carousel>
+  </p-card>
+</div>
+<div class="item-c"><p-card class="card-b"><cc-table-soccer> </cc-table-soccer></p-card></div>
+<div class="item-d"><p-card class="card-c">
+  <p-carousel [value]="products"  [numVisible]="112" [numScroll]="3" [circular]="false">
+    <ng-template let-product pTemplate="item">
+      <div class="product-item">
+        <div class="product-item-content" >
+          <div  style="border-style: solid; margin-right: 6.3em;">
+            <a href="detailLeague">
+            <img src="assets/image/test.jpg" [alt]="product.name" class="product-image" style="width: 5em;"/>
+            <p style="  padding-left: 0.6em;">
+              {{product.name}}
+            </p>
+            </a>
+          </div>
+        </div>
+      </div>
+    </ng-template>
+  </p-carousel>
+</p-card></div>
+</div>

@@ -1,0 +1,101 @@
+.teamsContainer {
+  display: grid;
+  min-height: 92vh;
+  max-height: 96vh;
+  margin: 0 12%;
+
+  grid-template-columns: [header] fit-content(40%) 1fr 2fr;
+  grid-template-rows:auto;
+  grid-template-areas:
+     "header try bar bar bar"
+    "main main bar bar bar"
+    "footer footer footer footer footer";
+}
+
+.item-a {
+  grid-area: header;
+  max-width: 100%;
+}
+.card-a {
+  display: grid;
+  padding-top: 11%;
+  max-width: 100%;
+}
+.item-b {
+  grid-area: bar;
+  max-width: 100%;
+}
+.card-b {
+  display: grid;
+  padding-top: 1.5%;
+  height: 100%;
+  min-height: 100%;
+  max-width: 100%;
+  width: 100%;
+  min-width: 100%;
+}
+.item-c {
+  grid-area: main;
+  max-width: 100%;
+}
+.card-c {
+  display: grid;
+  padding-top: 1.5%;
+  height: 100%;
+  min-height: 100%;
+  max-width: 100%;
+  width: 100%;
+  min-width: 100%;
+}
+.item-d {
+  grid-area: side;
+  max-width: 100%;
+}
+.card-d {
+  display: grid;
+  padding-top: 1.5%;
+  height: 100%;
+  min-height: 100%;
+  max-width: 100%;
+  width: 100%;
+  min-width: 100%;
+}
+.item-e {
+  grid-area: try;
+  max-width: 100%;
+}
+.card-e {
+  display: grid;
+  padding-top: 1.5%;
+  height: 100%;
+  min-height: 100%;
+  max-width: 100%;
+  width: 100%;
+  min-width: 100%;
+}
+
+.item-f {
+  grid-area: footer;
+  max-width: 100%;
+  visibility: hidden;
+}
+.card-f {
+  display: grid;
+  padding-top: 1.5%;
+  height: 100%;
+  min-height: 100%;
+  max-width: 100%;
+  width: 100%;
+  min-width: 100%;
+}
+
+.circle-with-text {
+  width: 2em;
+  height: 2em;
+  line-height: 1.8em;
+  border-radius: 50%;
+  text-align: center;
+  font-size: 32px;
+  border: 2px solid #666;
+  background: green;
+}

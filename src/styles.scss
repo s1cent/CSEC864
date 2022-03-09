@@ -1,1 +1,100 @@
 /* You can add global styles to this file, and also import other style files */
+@import '~@fortawesome/fontawesome-free/scss/fontawesome.scss';
+@import '~@fortawesome/fontawesome-free/scss/solid.scss';
+@import '~@fortawesome/fontawesome-free/scss/regular.scss';
+@import '~@fortawesome/fontawesome-free/scss/brands.scss';
+@import '~primeicons/primeicons.css';
+@import '~primeng/resources/themes/lara-light-indigo/theme.css';
+@import '~primeng/resources/primeng.min.css';
+@import '~primeflex/primeflex.css';
+
+@import '~mdb-angular-ui-kit/assets/scss/mdb.scss';
+
+.searchbar {
+  left: 29%;
+  position: absolute;
+  width: 38%;
+  top: 2%;
+}
+
+.splitButton{
+  width: 100%;
+}
+
+
+@keyframes bgcolor {
+  0% {
+    background-color: aliceblue;
+  }
+
+  30% {
+    background-color: lightcyan;
+  }
+
+  60% {
+    background-color: ghostwhite;
+  }
+
+  90% {
+    background-color: honeydew;
+  }
+
+  100% {
+    background-color: gainsboro;
+  }
+}
+
+body {
+  -webkit-animation: bgcolor 20s infinite;
+  animation: bgcolor 10s infinite;
+  -webkit-animation-direction: alternate;
+  animation-direction: alternate;
+}
+
+.carousel-control-next-icon:after
+{
+  content: '>';
+  font-size: 55px;
+  color: white;
+}
+
+.carousel-control-prev-icon:after {
+  content: '<';
+  font-size: 55px;
+  color: white;
+}
+
+.ownContainer {
+  display: flex;
+  flex-direction: column;
+}
+.card-b, .card-a, .card-c  .carouselOne {
+  .p-card-content {
+    padding: 0 !important;
+  }
+}
+.card-e {
+  .p-card-body {
+    padding: 0 !important;
+  }
+}
+.card-c-league{
+  .p-card{
+    width:31vw;
+  }
+}
+
+.carousel-control-next-icon:after,.customCarousel
+
+{
+  content: '>';
+  font-size: 55px;
+  color: #000000;
+}
+
+.carousel-control-prev-icon:after,.customCarousel {
+  content: '<';
+  font-size: 55px;
+  color: #000000;
+}
+

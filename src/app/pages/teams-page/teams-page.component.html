@@ -1,0 +1,134 @@
+<div class="teamsContainer">
+  <div class="item-a">
+    <p-card class="card-a">
+      <img src="assets/image/manU.png">
+    </p-card>
+  </div>
+
+  <div class="item-b">
+    <p-card class="card-b">  <p-table [value]="players" styleClass="p-datatable-sm"  >
+      <ng-template pTemplate="caption">
+        Manchester United
+      </ng-template>
+      <ng-template pTemplate="header">
+        <tr>
+          <th>Number</th>
+          <th>Name</th>
+          <th>Date of Birth / Age</th>
+          <th>Nationality</th>
+        </tr>
+      </ng-template>
+      <ng-template pTemplate="body" let-players>
+        <tr>
+          <td>{{players.number}}</td>
+          <td>{{players.name}}</td>
+          <td>{{players.dateofBirth}} / {{players.age}}</td>
+          <td>{{players.nationality}}</td>
+        </tr>
+      </ng-template>
+    </p-table></p-card>
+
+  </div>
+  <div class="item-c" style="margin-right: 1%">
+    <p-card class="card-c">
+      <p-panel header="Last 5 Games">
+        <div class="row">
+          <div class="col-sm-4">
+            <svg width="100" height="100" style="  display: block; margin: auto;">
+              <circle cx="50" cy="50" r="40" stroke="green" stroke-width="4" fill="green" />
+              Sorry, your browser does not support inline SVG.
+              <text fill="black" font-size="18" font-family="Verdana"
+                    x="50%" y ="55%" text-anchor="middle" alignment-baseline="central" >2</text>
+            </svg>
+
+            <div style="text-align: center;">Wins</div>
+          </div>
+          <div class="col-sm-4">
+            <svg width="100" height="100" style="  display: block; margin: auto;">
+              <circle cx="50" cy="50" r="40" stroke="blue" stroke-width="4" fill="blue" />
+              Sorry, your browser does not support inline SVG.
+              <text fill="black" font-size="18" font-family="Verdana"
+                    x="50%" y ="55%" text-anchor="middle" alignment-baseline="central" >1</text>
+            </svg>
+            <div style="text-align: center;">Draw</div>
+          </div>
+          <div class="col-sm-4">
+            <svg width="100" height="100" style="  display: block; margin: auto;">
+              <circle cx="50" cy="50" r="40" stroke="red" stroke-width="4" fill="red" />
+              Sorry, your browser does not support inline SVG.
+              <text fill="black" font-size="18" font-family="Verdana"
+                    x="50%" y ="55%" text-anchor="middle" alignment-baseline="central" >3</text>
+            </svg>
+            <div style="text-align: center;">Losses</div>
+          </div>
+        </div>
+      </p-panel>
+    </p-card>
+  </div>
+
+  <div class="item-e" style="margin: 1.5%">
+    <p-card class="card-e">
+
+      <mdb-carousel [controls]="true" [indicators]="true">
+        <mdb-carousel-item>
+          <p-card class="carouselOne">
+            <ng-template pTemplate="header">
+              <h2 style="text-align: center;"> Top-Scorer</h2>
+            </ng-template>
+            <p style="text-align: center"> 	Cristiano Ronaldo </p>
+            <img
+              src="https://img.a.transfermarkt.technology/portrait/big/8198-1631656078.jpg?lm=1"
+              class="d-block"
+              alt="..."
+              style="max-width:100%;
+              width: 13em;
+            max-height:100%; margin: auto"
+            />
+          </p-card>
+
+        </mdb-carousel-item>
+        <mdb-carousel-item>
+          <p-card class="carouselOne">
+            <ng-template pTemplate="header">
+              <h2 style="text-align: center;"> Most Assists</h2>
+            </ng-template>
+            <p style="text-align: center"> 	Bruno Fernandes </p>
+            <img
+              src="https://img.a.transfermarkt.technology/portrait/big/240306-1636537174.jpg?lm=1"
+              class="d-block"
+              alt="..."
+              style="max-width:100%;
+              width: 13em;
+            max-height:100%; margin: auto"
+            />
+          </p-card>
+
+        </mdb-carousel-item>
+        <mdb-carousel-item>
+          <p-card class="carouselOne">
+            <ng-template pTemplate="header">
+              <h2 style="text-align: center;"> Most Yellows</h2>
+            </ng-template>
+            <p style="text-align: center"> 	Alex Telles </p>
+            <img
+              src="https://img.a.transfermarkt.technology/portrait/big/255755-1542105315.png?lm=1"
+              class="d-block"
+              alt="..."
+              style="max-width:100%;
+              width: 13em;
+            max-height:100%; margin: auto"
+            />
+          </p-card>
+
+        </mdb-carousel-item>
+      </mdb-carousel>
+    </p-card>
+
+  </div>
+  <div class="item-f">
+    <p-card class="card-f">
+
+    </p-card>
+  </div>
+
+</div>

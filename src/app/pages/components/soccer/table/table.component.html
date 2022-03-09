@@ -1,0 +1,111 @@
+<h2 style="text-align: center;">Table</h2>
+
+<mdb-carousel>
+  <mdb-carousel-item>
+    <p-table [value]="soccerTable" styleClass="p-datatable-sm"  scrollHeight="55vh" [scrollable]="true">
+      <ng-template pTemplate="caption">
+        Prem League
+      </ng-template>
+      <ng-template pTemplate="header">
+        <tr>
+          <th>Rank</th>
+          <th>Logo</th>
+          <th>Name</th>
+          <th>Games</th>
+          <th>Points</th>
+          <th>S</th>
+          <th>U</th>
+          <th>N</th>
+          <th>Goals</th>
+          <th>Diff</th>
+        </tr>
+      </ng-template>
+      <ng-template pTemplate="body" let-soccerTable>
+        <tr>
+          <td>{{soccerTable.rank}}</td>
+          <td><p-avatar image="assets/image/{{soccerTable.logo}}"></p-avatar></td>
+          <td> <a [routerLink]="['/teams']">{{soccerTable.team}}</a></td>
+          <td>{{soccerTable.game}}</td>
+          <td>{{soccerTable.points}}</td>
+          <td>{{soccerTable.wins}}</td>
+          <td>{{soccerTable.draw}}</td>
+          <td>{{soccerTable.losses}}</td>
+          <td>{{soccerTable.goals}}</td>
+          <td>{{soccerTable.diff}}</td>
+        </tr>
+      </ng-template>
+    </p-table>
+  </mdb-carousel-item>
+  <mdb-carousel-item>
+    <p-table [value]="soccerTable" styleClass="p-datatable-sm" scrollHeight="55vh" [scrollable]="true">
+      <ng-template pTemplate="caption">
+        Prem League
+      </ng-template>
+      <ng-template pTemplate="header">
+        <tr>
+          <th>Rank</th>
+          <th>Logo</th>
+          <th>Name</th>
+          <th>Games</th>
+          <th>Points</th>
+          <th>S</th>
+          <th>U</th>
+          <th>N</th>
+          <th>Goals</th>
+          <th>Diff</th>
+        </tr>
+      </ng-template>
+      <ng-template pTemplate="body" let-soccerTable>
+        <tr>
+          <td>{{soccerTable.rank}}</td>
+          <td><p-avatar image="assets/image/{{soccerTable.logo}}"></p-avatar></td>
+          <td>{{soccerTable.team}}</td>
+          <td>{{soccerTable.game}}</td>
+          <td>{{soccerTable.points}}</td>
+          <td>{{soccerTable.wins}}</td>
+          <td>{{soccerTable.draw}}</td>
+          <td>{{soccerTable.losses}}</td>
+          <td>{{soccerTable.goals}}</td>
+          <td>{{soccerTable.diff}}</td>
+        </tr>
+      </ng-template>
+    </p-table>
+  </mdb-carousel-item>
+  <mdb-carousel-item>
+    <p-table [value]="soccerTable" styleClass="p-datatable-sm"   scrollHeight="55vh" [scrollable]="true">
+      <ng-template pTemplate="caption">
+        Prem League
+      </ng-template>
+      <ng-template pTemplate="header">
+        <tr>
+          <th>Rank</th>
+          <th>Logo</th>
+          <th>Name</th>
+          <th>Games</th>
+          <th>Points</th>
+          <th>S</th>
+          <th>U</th>
+          <th>N</th>
+          <th>Goals</th>
+          <th>Diff</th>
+        </tr>
+      </ng-template>
+      <ng-template pTemplate="body" let-soccerTable>
+        <tr>
+          <td>{{soccerTable.rank}}</td>
+          <td><p-avatar image="assets/image/{{soccerTable.logo}}"></p-avatar></td>
+          <td>{{soccerTable.team}}</td>
+          <td>{{soccerTable.game}}</td>
+          <td>{{soccerTable.points}}</td>
+          <td>{{soccerTable.wins}}</td>
+          <td>{{soccerTable.draw}}</td>
+          <td>{{soccerTable.losses}}</td>
+          <td>{{soccerTable.goals}}</td>
+          <td>{{soccerTable.diff}}</td>
+        </tr>
+      </ng-template>
+    </p-table>
+  </mdb-carousel-item>
+</mdb-carousel>
+
+<button pButton pRipple type="button" icon="fas fa-expand-arrows-alt" class="p-button-rounded p-button-text" style="float: right; margin-top: 1%;"></button>

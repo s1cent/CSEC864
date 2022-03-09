@@ -1,0 +1,56 @@
+<p-menubar>
+  <ng-template pTemplate="start">
+    <button pButton pRipple type="button" icon="pi pi-bars" class="p-button-raised p-button-text"
+            (click)="changeDisplay()"></button>
+
+    <div class="input-group rounded searchbar" >
+      <input type="search" class="form-control rounded" placeholder="Search" aria-label="Search" aria-describedby="search-addon" />
+      <span class="input-group-text border-0" id="search-addon">
+    <i class="fas fa-search"></i>
+  </span>
+    </div>
+  </ng-template>
+  <div mdbDropdown class="dropdown shadow-0" #dropdown>
+    <button class="btn dropdown-toggle" type="button" mdbDropdownToggle aria-expanded="false" >
+      <img src="https://mdbootstrap.com/img/new/standard/city/047.webp" class="img-fluid rounded-circle" alt="" style="width: 2em; height: 2em"/>
+      Hi, {{user}}!
+    </button>
+    <div mdbDropdownMenu class="dropdown-menu"  *ngIf="!loggedIn">
+      <form [formGroup]="profileForm" (ngSubmit)="logIn()" class="px-4 py-3">
+        <div class="form-outline mb-4">
+          <input mdbInput type="email" id="eMail" class="form-control" formControlName="eMail" (input)="setActive($event.target)"/>
+          <label class="form-label" for="eMail" >Email address</label>
+        </div>
+        <div class="form-outline mb-4">
+          <input type="password" id="password" class="form-control" formControlName="password" (input)="setActive($event.target)"/>
+          <label class="form-label" for="password">Password</label>
+        </div>
+        <div class="row mb-4">
+          <div class="col d-flex justify-content-center">
+            <div class="form-check">
+              <input
+                class="form-check-input"
+                type="checkbox"
+                value=""
+                id="form1Example3"
+                checked
+              />
+              <label class="form-check-label" for="form1Example3"> Remember me </label>
+            </div>
+          </div>
+        </div>
+        <button type="submit" class="btn btn-primary btn-block">Sign in</button>
+      </form>
+      <div class="dropdown-divider"></div>
+      <a class="dropdown-item" href="#">New around here? Sign up</a>
+      <a class="dropdown-item" href="#">Forgot password?</a>
+    </div>
+
+    <ul mdbDropdownMenu class="dropdown-menu" aria-labelledby="dropdownMenu2" *ngIf="loggedIn">
+      <li><button class="dropdown-item" type="button" (click)="loggingOut()">LogOut</button></li>
+    </ul>
+  </div>
+
+
+</p-menubar>
+

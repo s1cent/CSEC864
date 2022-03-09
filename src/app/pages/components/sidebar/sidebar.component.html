@@ -1,0 +1,38 @@
+<p-sidebar [(visible)]="display" position="left"  [baseZIndex]="10000" (onHide)="cancelDisplay()">
+  <p-button label="Home" icon="pi pi-home"  styleClass="p-button-secondary mb-4 splitButton"  (onClick)="changeSite('')"></p-button>
+
+  <div *ngIf="user">
+  <p-divider align="left">
+    <div class="inline-flex align-items-center">
+      <i class="pi pi-star-fill mr-2"></i>
+      <b> Favorites</b>
+    </div>
+  </p-divider>
+    <p-splitButton label="Soccer" icon="fas fa-futbol"  styleClass="p-button-secondary mb-4 splitButton"  (onClick)="changeSite('soccer')"
+                   [model]="favItems"></p-splitButton>
+  <p-divider align="left">
+    <div class="inline-flex align-items-center">
+      <i class="fas fa-align-justify mr-2"></i>
+      <b> Sportstype</b>
+    </div>
+  </p-divider>
+  <p-splitButton label="Football" icon="fas fa-football-ball"  styleClass="p-button-secondary mb-4 splitButton" [disabled]="true" [model]="normalItems"></p-splitButton>
+  <p-splitButton label="Golf" icon="fas fa-golf-ball"  styleClass="p-button-secondary mb-4 splitButton" [disabled]="true" [model]="normalItems"></p-splitButton>
+  <p-splitButton label="Basketball" icon="fas fa-basketball-ball"  styleClass="p-button-secondary mb-4 splitButton" [disabled]="true" [model]="normalItems"></p-splitButton>
+  <p-splitButton label="Volleyball" icon="fas fa-volleyball-ball"  styleClass="p-button-secondary mb-4 splitButton" [disabled]="true" [model]="normalItems"></p-splitButton>
+  </div>
+
+  <div *ngIf="!user">
+    <p-divider align="left">
+      <div class="inline-flex align-items-center">
+        <i class="fas fa-align-justify mr-2"></i>
+        <b> Sportstype</b>
+      </div>
+    </p-divider>
+    <p-button label="Soccer" icon="fas fa-futbol"  styleClass="p-button-secondary mb-4 splitButton"  (onClick)="changeSite('soccer')"></p-button>
+    <p-button label="Football" icon="fas fa-football-ball" [disabled]="true"  styleClass="p-button-secondary mb-4 splitButton"></p-button>
+    <p-button label="Golf" icon="fas fa-golf-ball" [disabled]="true"  styleClass="p-button-secondary mb-4 splitButton"></p-button>
+    <p-button label="Basketball" icon="fas fa-basketball-ball" [disabled]="true"  styleClass="p-button-secondary mb-4 splitButton"></p-button>
+    <p-button label="Volleyball" icon="fas fa-volleyball-ball" [disabled]="true"  styleClass="p-button-secondary mb-4 splitButton"></p-button>
+  </div>
+</p-sidebar>

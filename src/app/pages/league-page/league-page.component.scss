@@ -1,0 +1,76 @@
+.teamsContainer {
+  display: grid;
+  min-height: 92vh;
+  max-height: 96vh;
+  margin: 0 12%;
+
+  grid-template-columns: [header] fit-content(40%) 1fr 2fr;
+  grid-template-rows:auto;
+  grid-template-areas:
+     "header . bar bar bar"
+    "main main bar bar bar"
+    "footer footer footer footer footer";
+}
+
+.item-a {
+  grid-area: header;
+  max-width: 100%;
+}
+.card-a {
+  display: grid;
+  padding-top: 11%;
+  max-width: 100%;
+}
+.item-b {
+  grid-area: bar;
+  max-width: 100%;
+}
+.card-b {
+  display: grid;
+  padding-top: 1.5%;
+  height: 100%;
+  min-height: 100%;
+  max-width: 100%;
+  width: 100%;
+  min-width: 100%;
+}
+.item-c {
+  grid-area: main;
+  max-width: 100%;
+}
+.card-c-league {
+  display: grid;
+  padding-top: 1.5%;
+  max-width: 100%;
+  width: 100%;
+  min-width: 100%;
+  position: absolute;
+  top: 24vw;
+
+}
+.item-d {
+  grid-area: side;
+  max-width: 100%;
+}
+.card-d {
+  display: grid;
+  padding-top: 1.5%;
+  height: 100%;
+  min-height: 100%;
+  max-width: 100%;
+  width: 100%;
+  min-width: 100%;
+}
+.item-e {
+  grid-area: footer;
+  max-width: 100%;
+}
+.card-e {
+  display: grid;
+  padding-top: 1.5%;
+  height: 100%;
+  min-height: 100%;
+  max-width: 100%;
+  width: 100%;
+  min-width: 100%;
+}
